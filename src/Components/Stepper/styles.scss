@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+$color-warning: #F6AA1C;
+$color-light-gray: #F5F5F5;
+$color-light-gray2: #CCCCCC;
+$color-dark-gray: #474747;
+$color-black: #1F1F1F;
+$color-red: #c00;
+
+.stepper {
+    .css-1ps6pg7-MuiPaper-root {
+        border-radius: 0;
+        box-shadow: none;
+        background-color: $color-light-gray;
+    }
+
+    .stepperInfo {
+
+        p {
+            font-family: 'Inter';
+            font-style: normal;
+            color: $color-warning;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.75px;
+            
+            span {
+                font-family: 'Inter';
+                font-style: normal;
+                color: $color-dark-gray;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 34px;
+                letter-spacing: 0.75px;
+            }
+        }
+    
+        h1 {
+            font-family: 'Inter';
+            font-style: normal;
+            color: $color-black;
+            font-weight: 800;
+            font-size: 64px;
+            line-height: 66px;
+            letter-spacing: 1px;
+        }
+
+        Button {
+            background-color: $color-red;
+            color: $color-light-gray;
+            text-transform: none;
+            width: 30%;
+        }
+    }  
+
+    .stepperImg {
+        display: flex;
+        
+        .stepperShoes {
+            img {
+                width: 100%;
+            }
+        }
+
+        .imgDec {
+            margin-top: 50px;
+            
+            img {
+                width: 150%;
+            }
+        }
+
+        
+    }
+}
+
+.css-1m9128y {
+    background-color: $color-light-gray;
+    margin-top: 0 !important;
+    padding-bottom: 30px;
+    
+    .css-8ucetn-MuiButtonBase-root-MuiIconButton-root {
+        color: $color-red
+    }
+    .css-bbreus-MuiButtonBase-root-MuiIconButton-root {
+        color: $color-light-gray2
+    }
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+$dark-color: #1F1F1F;
+$white-color: #FFFFFF;
+
+.footer {
+    padding-top: 50px;
+    background-color: $dark-color;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: $white-color;
+}
+
+.bs-footer {
+    width: 30%;
+}
+
+.logo-icon img {
+    margin-right: 8px;
+}
+
+.contact-footer {
+    width: 20%;
+}
+
+.sm-icons {
+    margin-right: 20px;
+}
+
+.line-footer {
+    opacity: 0.3;
+}
