@@ -1,0 +1,46 @@
+{
+  "bikes": [
+    {
+      "id": 1,
+      "name": "CG 160 Start",
+      "price": "13.280,00",
+      "image": "https://www.honda.com.br/motos/sites/hda/files/styles/product_200x128/public/2022-08/CG%20Start%20-%20Azul%20Perolizado.png?itok=KG-Kt86E",
+      "cv": "162,7 cc"
+    },
+    {
+      "id": 2,
+      "name": "CG 160 Fan",
+      "price": "14.070,00",
+      "image": "https://www.honda.com.br/motos/sites/hda/files/styles/product_200x128/public/2022-08/CG%20Fan%20-%20Prata%20meta%CC%81lico_0.png?itok=4smckP-9",
+      "cv": "162,7 cc"
+    },
+    {
+      "id": 3,
+      "name": "CG 160 Titan",
+      "price": "15.810,00",
+      "image": "https://www.honda.com.br/motos/sites/hda/files/styles/product_200x128/public/2022-08/CG%20Titan%20-%20Prata%20meta%CC%81lico.png?itok=VQlF5eey",
+      "cv": "162,7 cc"  
+    },
+    {
+      "id": 4,
+      "name": "CG 160 Cargo",
+      "price": "14.760,00",
+      "image": "https://www.honda.com.br/motos/sites/hda/files/styles/product_200x128/public/2022-08/CG%20Cargo%20-%20branco.png?itok=f5UJrKpH",
+      "cv": "162,7 cc"
+    },
+    {
+      "id": 5,
+      "name": "Biz 110i",
+      "price": "11.000,00",
+      "image": "https://www.honda.com.br/motos/sites/hda/files/styles/product_200x128/public/2022-03/Biz-110i-prata.webp?itok=FEiG5oS8",
+      "cv": "109,1 cc"
+    },
+    {
+      "id": 6,
+      "name": "Forza 350",
+      "price": "48.247,00",
+      "image": "https://www.honda.com.br/motos/sites/hda/files/styles/product_200x128/public/2022-09/forza_site_cor%20cinza_grande_2.png?itok=EOS6AEd-",
+      "cv": "330 cc"
+    }    
+  ]
+}

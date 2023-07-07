@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+$color-red: #c00;
+
+.card {
+    width: 300px;
+    font-family: "inter", sans-serif;
+    padding: 15px;
+    margin: 20px 0;
+
+    .cardName {
+        font-size: 25px;
+    }
+
+    .cardImg {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 110%;
+            transition: 0.5s;
+        }
+
+        img:hover {
+            scale: 1.1;
+            transition: 0.5s;
+        }
+    }
+
+    .cardPrice {
+        text-align: end;
+
+        p {
+            margin: 10px 0;
+        }
+
+        h4 {
+            margin: 0;
+            font-size: 30px;
+            color: $color-red
+        }
+    }
+
+    .cardButton {
+        button {
+            background-color: #c00;
+            font-weight: bold;
+            font-size: 15px;
+            width: 100%;
+            height: 50px;
+        }
+    }
+}
+
+.bikes {
+    margin: 30px 0;
+}

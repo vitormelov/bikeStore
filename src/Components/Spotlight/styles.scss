@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+$color-light-gray: #F5F5F5;
+$color-red: #c00;
+$color-dark-gray: #474747;
+
+.spotlight {
+   padding: 70px 0;
+   border-top: 5px solid $color-red;
+   background-color: $color-light-gray;
+
+    .spotlightImg {
+        background: linear-gradient(180deg, hwb(0 18% 7%) -40.67%, rgba(255, 255, 255, 0) 100%);
+        width: 450px;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+
+        img {
+            scale: 0.6;
+        }
+    }
+    
+    .spotlightText {
+        width: 40%;
+
+        p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0.75px;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            color: $color-dark-gray;
+            line-height: 50px;
+            letter-spacing: 1px;
+        }
+
+        span {
+            color: $color-dark-gray;
+        }
+
+        Button {
+            background-color: $color-red;
+            width: 50%;
+            font-size: 16px;
+            height: 50px;
+        }
+    }
+}
