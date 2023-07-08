@@ -8,10 +8,13 @@ $color-black: #1F1F1F;
 $color-red: #c00;
 
 .stepper {
+    height: 500px;
+    
     .css-1ps6pg7-MuiPaper-root {
         border-radius: 0;
         box-shadow: none;
         background-color: $color-light-gray;
+        height: 500px;
     }
 
     .stepperInfo {
@@ -78,7 +81,7 @@ $color-red: #c00;
 .css-1m9128y {
     background-color: $color-light-gray;
     margin-top: 0 !important;
-    padding-bottom: 30px;
+    padding: 30px 0;
     
     .css-8ucetn-MuiButtonBase-root-MuiIconButton-root {
         color: $color-red

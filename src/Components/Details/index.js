@@ -2,6 +2,7 @@ import { Box, Button, Container } from "@mui/material";
 import React from "react";
 
 import "./styles.scss"
+import { Link } from "react-router-dom";
 
 export default function Details( { id }) {
     const [item, setItem] = React.useState([]); 
@@ -35,7 +36,7 @@ export default function Details( { id }) {
                         <p><b>Combustível:</b> {item.fuel}</p>
 
                         <div className="buy-button">
-                            <Button variant="contained">COMPRAR</Button>
+                            <Link to="/checkout"><Button variant="contained">COMPRAR</Button></Link>
                         </div>
                     </div>
                 </Box>

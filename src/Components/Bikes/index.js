@@ -47,7 +47,7 @@ export default function Bikes() {
             <Container fixed>
                 <Box sx={{ justifyContent: 'space-between', display: 'flex', flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap' } }>
                     {items.map(cada => (
-                        <Card name={cada.name} image={cada.image} price={cada.price} cv={cada.cv} id={cada.id}/>
+                        <Card name={cada.name} image={cada.image1} price={cada.price} cv={cada.cv} id={cada.id}/>
                     ))}
                 </Box>
             </Container>

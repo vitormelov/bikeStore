@@ -1,11 +1,13 @@
 import { Button, Container } from "@mui/material";
 import React from "react";
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 
 import "./styles.scss"
 
 export default function BuyCard() { 
 
-    const [cep, setCep] = React.useState('');
     const [logradouro, setLogradouro] = React.useState('');
     const [cidade, setCidade] = React.useState('');
     const logradouroInput = React.createRef();
@@ -42,7 +44,7 @@ export default function BuyCard() {
 
                         <div>
                             <label htmlFor="name">Nome completo</label> <br/>
-                            <input id="name" placeholder="Paulo Sérgio"/>
+                            <input id="name" placeholder="Fulano da Silva"/>
                         </div>
                         
 
@@ -53,7 +55,7 @@ export default function BuyCard() {
 
                         <div>
                             <label htmlFor="email">Telefone</label> <br/>
-                            <input id="email" placeholder="paulo@email.com"/>
+                            <input id="email" placeholder="fulano@email.com"/>
                         </div>
 
                         <div>
@@ -73,7 +75,7 @@ export default function BuyCard() {
 
                         <div>
                             <label htmlFor="titName">Nome do titular</label> <br/>
-                            <input id="titName" placeholder="Paulo Sérgio"/>
+                            <input id="titName" placeholder="Fulano da Silva"/>
                         </div>
                         
 
@@ -91,13 +93,22 @@ export default function BuyCard() {
                             <label htmlFor="expiration">Validade</label> <br/>
                             <input id="expiration" placeholder="xx/xx"/>
                         </div>
-
+                        
                         <div>
                             <label htmlFor="code">Código de segurança</label> <br/>
                             <input id="code" placeholder="xxx"/>
                         </div>
-
-                        <Button variant="contained">FINALIZAR COMPRA</Button>
+                        
+                        <div className="buy-date">
+                            <label>Data da compra</label> <br/>
+                            <LocalizationProvider dateAdapter={AdapterDayjs}>
+                                <DatePicker />
+                            </LocalizationProvider>
+                        </div>
+                        
+                        <div className="buy-button">
+                            <Button variant="contained">FINALIZAR COMPRA</Button>
+                        </div>
                     </form>
                 </div>
             </Container>

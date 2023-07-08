@@ -2,6 +2,7 @@
 
 $color-red: #c00;
 $color-gray: #F5F5F5;
+$color-green: #189e1e;
 
 
 .login {
@@ -40,7 +41,23 @@ $color-gray: #F5F5F5;
         
             button {
                 width: 100%;
+                margin-bottom: 120px;
+                background-color: $color-green;
             }
         }
+    }
+}
+
+.css-1wnsr1i {
+    text-align: center;
+
+    input {
+        width: 80%;
+        height: 30px;
+        padding: 5px;
+    }
+
+    button {
+        background-color: $color-green;
     }
 }

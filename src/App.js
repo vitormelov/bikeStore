@@ -7,6 +7,9 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Admin from "./pages/Admin";
 import Product from "./pages/Product";
+import Checkout from "./pages/Checkout";
+import AddAdmin from "./pages/AddAdmin";
+import EditAdmin from "./pages/EditAdmin";
 
 export default function App() { 
   return (
@@ -20,7 +23,9 @@ export default function App() {
           <Route path="/login" element={<Login/>} />
           <Route path="/produto/:id" element={<Product/>}/>
           <Route path="/admin" element={<Admin/>}/>
-          <Route path="/meus-pedidos" />
+          <Route path="/admin/produto/:id/editar" element={<EditAdmin/>}/>
+          <Route path="/checkout" element={<Checkout/>} />
+          <Route path="/admin/add" element={<AddAdmin/>} />
         </Routes>
 
         <Footer/>

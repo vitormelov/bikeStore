@@ -15,8 +15,6 @@ export default function Navbar() {
             <Container fixed>
                 <Box sx={{ justifyContent: 'flex-start', display: 'flex', flexDirection: 'row', alignItems: 'center' } }>
                     <Link className={isActive('/')} to="/">Home</Link>
-                    <Link className={isActive('/login')} to="/login">Login</Link>
-                    <Link className={isActive('/admin')} to="/admin">Admin</Link>
                     <Link className={isActive('/meus-pedidos')} to="/meus-pedidos">Meus Pedidos</Link>
                 </Box>
             </Container>

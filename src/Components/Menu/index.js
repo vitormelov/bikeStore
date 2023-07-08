@@ -27,7 +27,7 @@ export default function Menu() {
                 </div>
               </div>
 
-              <Link to='/'><Button variant="contained">Entrar</Button></Link>
+              <Link to='/login'><Button variant="contained">Entrar</Button></Link>
             </Box>
           </Container>
       </div>
