@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+$color-red: #c00;
+$color-gray: #F5F5F5;
+
+.details {
+    margin: 30px 0;
+
+    .details-img {
+        width: 45%;
+        img {
+            width: 100%;
+            
+        }
+    }
+
+    .details-prop {
+        font-family: 'Inter', sans-serif;
+        width: 45%;
+        background-color: $color-gray;
+        padding: 15px;
+        border: 3px solid $color-red;
+
+        h2 {
+            color: $color-red;
+        }
+
+        .buy-button {
+
+            button {
+                width: 100%;
+                background-color: #c00;
+                font-size: 16px;
+                margin-top: 15px;
+            }
+        }
+    }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Button, Container } from "@mui/material";
 import "./styles.scss"
+import { Link } from "react-router-dom";
 
 export default function Bikes() {
     const [items, setItems] = React.useState([]); 
@@ -11,8 +12,11 @@ export default function Bikes() {
             .then(data => setItems(data));
     }, []);
 
-
     const Card = (props) => {
+        const moveTo = () => {
+            window.location.href = `/produto/${props.id}`;
+          };
+
         return (
             <Box>
                 <div className="card">
@@ -31,7 +35,7 @@ export default function Bikes() {
                     </div>
 
                     <div className="cardButton">
-                        <Button variant="contained">Tenho interesse</Button>
+                        <Link onClick={moveTo}><Button variant="contained">Tenho interesse</Button></Link>
                     </div>
                 </div>
             </Box>
@@ -43,7 +47,7 @@ export default function Bikes() {
             <Container fixed>
                 <Box sx={{ justifyContent: 'space-between', display: 'flex', flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap' } }>
                     {items.map(cada => (
-                        <Card name={cada.name} image={cada.image} price={cada.price} cv={cada.cv}/>
+                        <Card name={cada.name} image={cada.image} price={cada.price} cv={cada.cv} id={cada.id}/>
                     ))}
                 </Box>
             </Container>

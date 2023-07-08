@@ -4,6 +4,9 @@ import Menu from "./Components/Menu";
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Admin from "./pages/Admin";
+import Product from "./pages/Product";
 
 export default function App() { 
   return (
@@ -14,9 +17,9 @@ export default function App() {
 
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/produtos" />
-          <Route path="/produto/:id"/>
-          <Route path="/categorias" />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/produto/:id" element={<Product/>}/>
+          <Route path="/admin" element={<Admin/>}/>
           <Route path="/meus-pedidos" />
         </Routes>
 
