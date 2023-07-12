@@ -1,14 +1,16 @@
-import { Container } from '@mui/material';
+import { Button, Container } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import "./styles.scss"
+
 export default function List() {
-    const [campaigns, setCampaigns] = React.useState([]);
+    const [bikes, setBikes] = React.useState([]);
 
     React.useEffect(() => {
         fetch('http://localhost:8000/bikes')
             .then(res => res.json())
-            .then(data => setCampaigns(data));
+            .then(data => setBikes(data));
     }, []);
 
     const remove = (id) => {
@@ -20,19 +22,17 @@ export default function List() {
             method: 'DELETE'
         });
 
-        setCampaigns(
-            campaigns.filter(cada => cada.id !== id)
+        setBikes(
+            bikes.filter(cada => cada.id !== id)
         );
     }; 
 
     return (
         <div>
             <Container>
-                <h1>Admin</h1>
+                <Link to="/admin/add"><Button variant='outlined' color='success'>Adicionar veículo</Button></Link>
 
-                <Link to="/admin/add">Adicionar veículo</Link>
-
-                <table width="100%">
+                <table width="100%" className='table'>
                     <thead>
                         <tr>
                             <th>Nome</th>
@@ -43,7 +43,7 @@ export default function List() {
                         </tr>
                     </thead>
                     <tbody>
-                        {campaigns.map(cada => {
+                        {bikes.map(cada => {
                             return (
                                 <tr>
                                     <td>{cada.name}</td>
@@ -52,9 +52,9 @@ export default function List() {
                                     <td> <img width="100px" src={cada.image1} alt='moto'/> </td>
                                     <td>
                                         <Link to={"/admin/produto/"+cada.id+"/editar"}>
-                                            <button>Editar</button>
+                                            <button className='table-edit'>Editar</button>
                                         </Link>
-                                        <button onClick={() => remove(cada.id)}>Excluir</button>
+                                        <button className='table-delete' onClick={() => remove(cada.id)}>Excluir</button>
                                     </td>
                                 </tr>
                             )

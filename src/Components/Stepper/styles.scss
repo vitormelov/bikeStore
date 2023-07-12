@@ -30,10 +30,11 @@ $color-red: #c00;
             
             span {
                 font-family: 'Inter';
+                font-weight: bold;
                 font-style: normal;
                 color: $color-dark-gray;
                 font-weight: 400;
-                font-size: 18px;
+                font-size: 25px;
                 line-height: 34px;
                 letter-spacing: 0.75px;
             }
@@ -53,7 +54,7 @@ $color-red: #c00;
             background-color: $color-red;
             color: $color-light-gray;
             text-transform: none;
-            width: 30%;
+            width: 200px;
         }
     }  
 

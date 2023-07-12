@@ -3,8 +3,10 @@ import React from "react";
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { Link } from "react-router-dom";
 
 import "./styles.scss"
+
 
 export default function BuyCard() { 
 
@@ -107,7 +109,7 @@ export default function BuyCard() {
                         </div>
                         
                         <div className="buy-button">
-                            <Button variant="contained">FINALIZAR COMPRA</Button>
+                            <Link to="/"><Button variant="contained">FINALIZAR COMPRA</Button></Link>
                         </div>
                     </form>
                 </div>

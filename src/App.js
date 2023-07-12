@@ -10,6 +10,7 @@ import Product from "./pages/Product";
 import Checkout from "./pages/Checkout";
 import AddAdmin from "./pages/AddAdmin";
 import EditAdmin from "./pages/EditAdmin";
+import Maintenance from "./Components/Maintenance";
 
 export default function App() { 
   return (
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="/admin/produto/:id/editar" element={<EditAdmin/>}/>
           <Route path="/checkout" element={<Checkout/>} />
           <Route path="/admin/add" element={<AddAdmin/>} />
+          <Route path="/maintenance" element={<Maintenance/>} />
         </Routes>
 
         <Footer/>

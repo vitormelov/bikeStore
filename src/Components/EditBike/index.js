@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "@mui/material";
 import { useParams } from "react-router-dom";
+import Toaster from "../Toaster";
 
 import './styles.scss'
 
@@ -125,8 +126,6 @@ export default function EditBike() {
                 fuel: fuel
             })
         });
-
-        alert("Foi");
     }
 
     return (
@@ -205,7 +204,7 @@ export default function EditBike() {
                         <input value={fuel} onChange={alterarCombustivel} placeholder="Digite aqui"/>
                     </div>
                     
-                    <button>EDITAR</button>
+                    <button><Toaster text="EDITAR MOTO"/></button>
                 </form>
             </Container>
         </div>

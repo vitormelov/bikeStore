@@ -101,6 +101,57 @@
       "ratio": "9,5 : 1",
       "powerSystem": "Injeção Eletrônica PGM FI",
       "fuel": "Gasolina"
+    },
+    {
+      "id": 7,
+      "name": "CB 300F Twister",
+      "price": "21.990,00",
+      "image1": "https://www.honda.com.br/motos/sites/hda/files/2022-12/lateral-direita-moto-honda-cb-300f-twister-modelo-abs-cor-dourada.webp",
+      "image2": "https://www.honda.com.br/motos/sites/hda/files/2022-12/lateral-direita-moto-honda-cb-300f-twister-modelo-abs-cor-dourada.webp",
+      "cv": "293,5 cc",
+      "type": "OHC, Monocilíndrico, 4 tempos, arrefecido a ar",
+      "maxPower": "14,9 cv a 8.000 rpm",
+      "maxTorque": "1,40 kgf.m a 7.000 rpm",
+      "transmission": "5 velocidades",
+      "startSystem": "Elétrico",
+      "diameterXStroke": "57,3 x 63,0 mm",
+      "ratio": "9,5 : 1",
+      "powerSystem": "Injeção Eletrônica PGM FI",
+      "fuel": "Gasolina"
+    },
+    {
+      "id": 8,
+      "name": "CRF 1100L Africa Twin Adventure Sports",
+      "price": "109.130,00",
+      "image1": "https://www.honda.com.br/motos/sites/hda/files/2023-01/1920x980-imagem-desktop-moto-honda-crf-1100l-africa-twin-adventure-sports-dct-2023-v1.webp",
+      "image2": "https://www.honda.com.br/motos/sites/hda/files/2023-01/1920x980-imagem-desktop-moto-honda-crf-1100l-africa-twin-adventure-sports-dct-2023-v1.webp",
+      "cv": "1.084 cc",
+      "type": "OHC, Monocilíndrico, 4 tempos, arrefecido a ar",
+      "maxPower": "14,9 cv a 8.000 rpm",
+      "maxTorque": "1,40 kgf.m a 7.000 rpm",
+      "transmission": "5 velocidades",
+      "startSystem": "Elétrico",
+      "diameterXStroke": "57,3 x 63,0 mm",
+      "ratio": "9,5 : 1",
+      "powerSystem": "Injeção Eletrônica PGM FI",
+      "fuel": "Gasolina"
+    },
+    {
+      "id": 9,
+      "name": "CBR 1000RR-R FIREBLADE SP",
+      "price": "198.500,00",
+      "image1": "https://www.honda.com.br/motos/sites/hda/files/2023-01/desktop-moto-honda-cbr1000rr-r-firebladesp-2023-branco-perolizado-15.webp",
+      "image2": "https://www.honda.com.br/motos/sites/hda/files/2023-01/desktop-moto-honda-cbr1000rr-r-firebladesp-2023-branco-perolizado-15.webp",
+      "cv": "1.000 cc",
+      "type": "OHC, Monocilíndrico, 4 tempos, arrefecido a ar",
+      "maxPower": "14,9 cv a 8.000 rpm",
+      "maxTorque": "1,40 kgf.m a 7.000 rpm",
+      "transmission": "5 velocidades",
+      "startSystem": "Elétrico",
+      "diameterXStroke": "57,3 x 63,0 mm",
+      "ratio": "9,5 : 1",
+      "powerSystem": "Injeção Eletrônica PGM FI",
+      "fuel": "Gasolina"
     }
   ]
 }

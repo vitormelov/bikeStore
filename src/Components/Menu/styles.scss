@@ -65,4 +65,8 @@ $color-red: #c00;
         font-weight: bold;
         background-color: $color-red;
     }
+
+    button:hover {
+        background-color: $color-red;
+    }
 }

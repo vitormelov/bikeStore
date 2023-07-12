@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.scss"
 import { Container } from "@mui/material";
+import Toaster from "../Toaster";
 
 export default function Addbike() {
     const [name, setName] = React.useState('');
@@ -83,7 +84,7 @@ export default function Addbike() {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                title: name,
+                name: name,
                 price: price,
                 image1: image1,
                 image2: image2,
@@ -99,8 +100,6 @@ export default function Addbike() {
                 fuel: fuel
             })
         });
-
-        alert("Foi");
     }
 
     return (
@@ -179,7 +178,8 @@ export default function Addbike() {
                         <input onChange={alterarCombustivel} placeholder="Digite aqui"/>
                     </div>
                     
-                    <button>ADICIONAR</button>
+                    <button><Toaster text="ADICIONAR MOTO"/></button>
+
                 </form>
             </Container>
         </div>

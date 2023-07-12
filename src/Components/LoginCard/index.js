@@ -31,11 +31,14 @@ export default function LoginCard() {
                     <h2>Login</h2>
                     <input type="email" placeholder="Email"></input>
                     <br/>
-                    <input type="password" placeholder="Senha"></input>
+                    <input maxLength={8} type="password" placeholder="Senha"></input>
                     <br/>
                     <Link to="/"><Button variant="contained">Entrar</Button></Link>
 
-                    <Link onClick={handleOpen}>adminstrador?</Link>
+                    <div className='adm'>
+                        <Link onClick={handleOpen}>Área do administrador</Link>
+                    </div>
+                    
                 </div>
             </Container>
 
@@ -51,7 +54,7 @@ export default function LoginCard() {
                             Administração
                         </Typography>
                         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                            <input placeholder='senha'></input>
+                            <input maxLength={8} type='password' placeholder='senha'></input>
                         </Typography>
                         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                             <Link to="/admin"><Button variant='contained'>Entrar</Button></Link>
